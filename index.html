@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zwillinge – Baby-Tracker · Datenschutz &amp; Support</title>
+<style>
+  :root {
+    --rose: #ED6B94;
+    --lavender: #9478E6;
+    --ink: #1d1b22;
+    --muted: #6b6672;
+    --bg: #faf7fb;
+    --card: #ffffff;
+    --line: #ece6ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #f3eff6; --muted: #aaa3b2; --bg: #17141c; --card: #221e29; --line: #322c3b; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+  }
+  header {
+    padding: 56px 24px 32px;
+    text-align: center;
+    background: linear-gradient(160deg, rgba(237,107,148,.18), rgba(148,120,230,.14) 60%, transparent);
+  }
+  .hearts { font-size: 0; margin-bottom: 14px; }
+  .hearts svg { width: 56px; height: 56px; margin: 0 -10px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  header p { margin: 0; color: var(--muted); }
+  nav { display: flex; gap: 10px; justify-content: center; margin-top: 22px; flex-wrap: wrap; }
+  nav a {
+    text-decoration: none; color: var(--ink); background: var(--card);
+    border: 1px solid var(--line); border-radius: 999px; padding: 8px 18px; font-weight: 600; font-size: 15px;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 8px 20px 64px; }
+  section {
+    background: var(--card); border: 1px solid var(--line); border-radius: 24px;
+    padding: 28px 28px 20px; margin-top: 24px;
+  }
+  h2 { font-size: 24px; margin: 0 0 4px; }
+  h3 { font-size: 18px; margin: 26px 0 6px; }
+  .stand { color: var(--muted); font-size: 14px; margin-bottom: 8px; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 22px; }
+  .note {
+    border-left: 4px solid var(--lavender); background: rgba(148,120,230,.08);
+    padding: 12px 16px; border-radius: 0 12px 12px 0; margin: 16px 0;
+  }
+  details { border-top: 1px solid var(--line); padding: 14px 0; }
+  details:first-of-type { border-top: 0; }
+  summary { cursor: pointer; font-weight: 600; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "+"; display: inline-block; width: 20px; color: var(--rose); font-weight: 700; }
+  details[open] summary::before { content: "–"; }
+  details p { margin: 8px 0 0 20px; }
+  .contact { font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 14px; padding: 0 20px 40px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="hearts" aria-hidden="true">
+    <svg viewBox="0 0 32 30"><path fill="#ED6B94" d="M16 29C7 22 1 16.5 1 9.8 1 5 4.7 1.5 9 1.5c2.9 0 5.4 1.6 7 4 1.6-2.4 4.1-4 7-4 4.3 0 8 3.5 8 8.3C31 16.5 25 22 16 29z"/></svg>
+    <svg viewBox="0 0 32 30"><path fill="#9478E6" fill-opacity=".92" d="M16 29C7 22 1 16.5 1 9.8 1 5 4.7 1.5 9 1.5c2.9 0 5.4 1.6 7 4 1.6-2.4 4.1-4 7-4 4.3 0 8 3.5 8 8.3C31 16.5 25 22 16 29z"/></svg>
+  </div>
+  <h1>Zwillinge – Baby-Tracker</h1>
+  <p>Essen, Windeln, Schlaf, Gewicht und Größe – für ein Baby oder Zwillinge.</p>
+  <nav>
+    <a href="#datenschutz">Datenschutz</a>
+    <a href="#support">Support</a>
+  </nav>
+</header>
+
+<main>
+  <section id="datenschutz">
+    <h2>Datenschutzerklärung</h2>
+    <div class="stand">Stand: 12. November 2026</div>
+
+    <div class="note">
+      <strong>Kurz gesagt:</strong> Die App sammelt keine Daten. Es gibt keinen eigenen Server, keine Werbung,
+      keine Analyse-Werkzeuge und kein Tracking. Deine Einträge bleiben auf Deinem iPhone und – wenn Du es nutzt – in Deiner eigenen iCloud.
+    </div>
+
+    <h3>1. Verantwortlicher</h3>
+    <p>Marius Jatzkowski<br>
+      Kontakt: <a class="contact" href="mailto:stempeluhrarbeitszeit@gmail.com">stempeluhrarbeitszeit@gmail.com</a></p>
+
+    <h3>2. Welche Daten die App verarbeitet</h3>
+    <p>Du kannst in der App Angaben zu Deinem Kind oder Deinen Kindern eintragen:</p>
+    <ul>
+      <li>Namen und Farben, die Du für die Kinder festlegst</li>
+      <li>Mahlzeiten (Flasche mit Menge, Stillen mit Seite und Dauer), Windeln und Schlafzeiten</li>
+      <li>Gewicht und Größe mit Datum sowie eigene Notizen</li>
+    </ul>
+    <p>Diese Angaben können gesundheitsbezogen sein. Sie werden ausschließlich zum Betrieb der App-Funktionen verwendet
+      (Anzeige, Verlauf, Diagramme, Widget, PDF-Bericht) und niemals an den Entwickler oder an Dritte übermittelt.</p>
+
+    <h3>3. Speicherung auf Deinem Gerät</h3>
+    <p>Alle Einträge werden lokal auf Deinem iPhone gespeichert. Das Widget und die Anzeige auf dem Sperrbildschirm
+      bzw. in der Dynamic Island lesen diese Daten nur auf Deinem Gerät.</p>
+
+    <h3>4. iCloud-Synchronisierung</h3>
+    <p>Bist Du auf Deinem iPhone bei iCloud angemeldet, speichert die App eine Kopie Deiner Einträge in
+      <strong>Deinem privaten iCloud-Konto</strong> (Apple CloudKit). Diese Daten liegen bei Apple unter Deinem Konto;
+      der Entwickler hat darauf keinen Zugriff. Für die Verarbeitung durch Apple gilt die
+      <a href="https://www.apple.com/de/legal/privacy/">Datenschutzrichtlinie von Apple</a>.
+      Wenn Du iCloud für die App in den iPhone-Einstellungen ausschaltest, findet keine Synchronisierung statt.</p>
+
+    <h3>5. Teilen mit anderen Personen</h3>
+    <p>Über „Eine weitere Person einladen“ kannst Du Deine Einträge mit Personen teilen, die Du selbst auswählst
+      (iCloud-Freigabe von Apple). Eingeladene Personen sehen alle Einträge und Messungen und können eigene hinzufügen,
+      ändern oder löschen. Du kannst Personen jederzeit in der App unter „Personen einladen oder verwalten“ entfernen;
+      eingeladene Personen können die Freigabe selbst verlassen.</p>
+
+    <h3>6. Mitteilungen</h3>
+    <p>Die Erinnerung, Gewicht und Größe nachzutragen, wird lokal auf Deinem iPhone geplant. Dafür werden keine Daten
+      an einen Server gesendet. Du kannst sie in der App unter Einstellungen → Erinnerungen ausschalten.
+      Damit Einträge anderer Personen schnell ankommen, nutzt iCloud Apples Push-Dienst; diese Mitteilungen enthalten keine Inhalte Deiner Einträge.</p>
+
+    <h3>7. PDF-Bericht</h3>
+    <p>Den PDF-Bericht für die Kinderarztpraxis erstellt die App lokal auf Deinem iPhone. Er wird nur weitergegeben,
+      wenn Du ihn selbst teilst, z. B. per Nachricht, Mail oder AirDrop.</p>
+
+    <h3>8. Keine Analyse, keine Werbung, kein Tracking</h3>
+    <p>Die App enthält keine Werbung, keine Analyse- oder Absturzberichts-Werkzeuge von Drittanbietern und verfolgt Dich nicht
+      über Apps oder Websites hinweg.</p>
+
+    <h3>9. Löschen Deiner Daten</h3>
+    <p>Einzelne Einträge löschst Du direkt in der App; alle Einträge unter Einstellungen → Daten → „Alle Einträge löschen“.
+      Gelöschte Einträge werden auch in iCloud und – bei einer Freigabe – bei den anderen Personen entfernt.
+      Beim Löschen der App bleiben die iCloud-Daten erhalten; Du kannst sie in den iPhone-Einstellungen unter
+      Apple-Account → iCloud → Speicher verwalten entfernen.</p>
+
+    <h3>10. Deine Rechte</h3>
+    <p>Da der Entwickler keine Deiner Daten erhält, liegen sie vollständig in Deiner Hand. Bei Fragen zum Datenschutz
+      erreichst Du mich unter der oben genannten Kontaktadresse. Du hast außerdem das Recht, Dich bei einer
+      Datenschutz-Aufsichtsbehörde zu beschweren.</p>
+
+    <h3>11. Änderungen</h3>
+    <p>Ändern sich die Funktionen der App, passe ich diese Erklärung an. Es gilt die jeweils hier veröffentlichte Fassung.</p>
+  </section>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>Fragen, Probleme oder Ideen? Schreib mir: <a class="contact" href="mailto:stempeluhrarbeitszeit@gmail.com">stempeluhrarbeitszeit@gmail.com</a></p>
+
+    <details>
+      <summary>Wie teile ich die Einträge mit meinem Partner oder meiner Partnerin?</summary>
+      <p>Öffne Einstellungen → Gemeinsam nutzen → „Eine weitere Person einladen“ und schick die Einladung, z. B. per Nachricht.
+        Die andere Person braucht die App und ein iPhone mit iCloud. Nach dem Annehmen seht ihr beide dieselben Einträge.</p>
+    </details>
+    <details>
+      <summary>Die Einträge kommen beim anderen iPhone nicht an.</summary>
+      <p>Prüfe, ob beide iPhones online und bei iCloud angemeldet sind und iCloud für die App erlaubt ist.
+        Tippe in den Einstellungen auf „Jetzt synchronisieren“. Zeigt die App eine Pause durch iCloud an, geht es zur genannten Uhrzeit automatisch weiter.</p>
+    </details>
+    <details>
+      <summary>Kann ich die App auch für ein einzelnes Baby nutzen?</summary>
+      <p>Ja. Unter Einstellungen → Kinder wählst Du zwischen „Ein Baby“ und „Zwillinge“.</p>
+    </details>
+    <details>
+      <summary>Wie erstelle ich den Bericht für die Kinderarztpraxis?</summary>
+      <p>Tippe im Verlauf oder bei Wachstum oben links auf „PDF für Kinderarzt“, wähle den Zeitraum und teile oder sichere das PDF.</p>
+    </details>
+    <details>
+      <summary>Wie schalte ich die Erinnerung für Gewicht und Größe aus?</summary>
+      <p>In der App unter Einstellungen → Erinnerungen.</p>
+    </details>
+    <details>
+      <summary>Ersetzt die App ärztlichen Rat?</summary>
+      <p>Nein. Die App hilft beim Aufschreiben und Überblicken. Bei Fragen zur Gesundheit oder Entwicklung Deines Kindes wende Dich an Deine Hebamme oder Kinderarztpraxis.</p>
+    </details>
+  </section>
+</main>
+
+<footer>© 2026 Marius Jatzkowski</footer>
+</body>
+</html>
